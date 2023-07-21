@@ -1,0 +1,280 @@
+body{
+
+    background-color:black ;
+
+}
+
+.gridLayout{
+
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(94, 172, 91); ;
+    padding: 20 px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 40% 40% auto; 
+    grid-template-rows: 7% 5% auto auto 10%; 
+    justify-content: stretch;
+  
+}
+
+
+/*caja1*/
+.gridLogo{ 
+    width: 100%;
+    height: 100%;
+    padding: 0 0 10px 0;
+   
+}
+.logo{
+    width: 100%;
+    height: 100%;
+   
+   
+  }
+
+  /*caja2*/
+
+  .gridSearchBar{
+
+    width: 100%;
+    height: 100%;
+   
+ 
+  
+   
+  
+  
+  }
+  #elementosBusqueda{/*contenedor de searchbar*/
+    font-size: 20px ;
+    color: rgb(235, 238, 236);
+    text-align: center;
+    margin: 0;
+    padding: 1.5em;
+  }
+  
+
+
+
+#botonBusqueda{/*boton que se cliquea para buscar*/
+
+    font-size: large;
+    width:420px ;
+    height: 35px;
+
+}
+#cajaTextoBusqueda{/*caja donde se ingresa el texto para buscar*/
+
+    width: 300px;
+    height: 35px;
+}
+
+ /*caja3*/
+  
+ .gridMdesplegable{
+    width: 78%;
+    height: 60%;
+    padding: 30px 20px 20px 20px   ;
+    margin: auto;
+    align-items: center;
+    background-color:rgb(94, 172, 91); ;
+   
+ }
+select{
+    font-size: large;
+    background-color: rgb(94, 172, 91) ;
+   
+}
+
+/*caja4 */
+
+.gridMInferior{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%; 
+    grid-template-rows: 100%; 
+    grid-column: 1/4; 
+    color: aliceblue;
+    border: 2px solid rgb(94, 172, 91);
+    padding: 1% 1% 1% 1%;
+    background-color:rgb(23, 112, 23);
+    text-align: center;
+    
+
+}
+#gridMInferiorSec{
+
+    text-align: center;
+    padding: 10px 30px 35px 40px;
+    border: 2px solid rgb(23, 112, 23);
+    background-color: rgb(94, 172, 91) ;
+
+}
+
+/*caja5*/
+#ingresoFrutas{
+
+    width: 98%;
+    height: 78%;
+   padding: 0 5px 5px 0;
+   
+ 
+
+}
+
+#frutasFrescas{
+    color: aliceblue;
+}
+
+
+.gridIngresoFrutas{
+
+    text-align: center;
+    align-items: center;
+    border: 2px solid rgb(18, 146, 76);
+    background-color: rgb(94, 172, 91) ;
+    padding-bottom: 28%;
+    color: aliceblue;
+}
+/*caja6*/
+#ingresoVerduras{
+
+    width: 98%;
+    height: 78%;
+   padding:0 5px 5px 0;
+   
+ 
+
+}
+
+#verdurasFrescas{
+    color: aliceblue;
+}
+
+.gridIngresoVerduras{
+
+    text-align: center;
+    align-items: center;
+    border: 2px solid rgb(18, 146, 76);
+    background-color: rgb(94, 172, 91);
+    padding-bottom: 28%;
+    color: aliceblue;
+}
+
+/*caja8*/
+#ingresoMiel{
+
+    width: 49%;
+    height: 78%;
+   padding:0 5px 5px 0;
+   float: left;
+   background-color: rgb(94, 172, 91) ;
+   
+ 
+
+}
+#ingresoConservas{
+
+    width: 46%;
+    height: 78%;
+   padding:0 5px 5px 0;
+   float: right;
+   
+   
+ 
+
+}
+
+
+#mielConservas{
+    color: aliceblue;
+    background-color: rgb(94, 172, 91) ;
+}
+
+.gridIngresoMielConservas{
+
+    text-align: center;
+    align-items: center;
+    border: 2px solid rgb(18, 146, 76);
+    background-color: rgb(94, 172, 91);
+    color: aliceblue;
+    padding-bottom: 28%;
+   
+
+}
+
+/*caja9*/
+#ingresoHarinas{
+
+    width: 49%;
+    height: 78%;
+   padding:0 5px 5px 0;
+   float: left;
+   
+}
+#ingresoFrutosSecos{
+
+    width: 46%;
+    height: 78%;
+    padding:0 5px 5px 0;
+   margin: 10 px;
+   float: right;
+}
+
+
+#harinasFrutosSecos{
+    color: aliceblue;
+}
+
+.gridIngresoHarinasFrutosSecos{
+
+    text-align: center;
+    align-items: center;
+    border: 2px solid rgb(18, 146, 76);
+    background-color: rgb(94, 172, 91) ;
+    padding-bottom: 28%;
+    color: aliceblue;
+   
+
+}
+.gridAside {/*caja 7*/
+    grid-row: 3/5; 
+    grid-column: 3/4;
+    padding: 5% 5% 5% 5%;
+    background-color:rgb(23, 112, 23);
+    text-align: center;
+    color: aliceblue;
+    border: 2px solid rgb(18, 146, 76);
+
+}
+
+.aOfertado{ /*foto*/
+
+    height: 8em;
+    width: 8em;
+    border: 2px solid rgb(18, 146, 76);
+
+}
+
+.artOfertado{
+    border: 2px solid rgb(18, 146, 76);
+    background-color: rgb(94, 172, 91) ;
+
+
+}
+
+.gridFooter{/*caja10---- footer*/
+   
+   
+    display: grid;
+     grid-row: 5/6; 
+     grid-column: 1/4;
+     grid-template-columns:50% 50%; 
+     border: 2px solid rgb(18, 146, 76);
+     background-color:rgb(94, 172, 91);
+     color: aliceblue;
+    
+
+
+
+}
