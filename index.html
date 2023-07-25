@@ -30,6 +30,18 @@
          </form>
       </div>
 
+      <div class="dropdownMenu"><!--bton para menu en medias hasta 1199 px-->
+        <button onclick="myFunction()" class="drop-button">MENU</button>
+       <div id="myDropdown" class="dropdown-content">
+         <a href="#">INICIAR SESION</a>
+         <a href="#">REGISTRARME</a>
+         <a href="#">DONDE RETIRO</a>
+         <a href="#">SOY PRODUTOR</a>
+         <a href="#">MI LISTA</a>
+         <a href="#" id="contenedorIcon">MI CARRITO<img src="../proyecto-Ecommerce/images/carritoIcono.png" alt="carrito" id="mInferiorIcon"></a>
+       </div>
+     </div>
+
 
         
      <div class="gridMInferior"><!--caja3-->
@@ -59,66 +71,62 @@
           <h2 id="verdurasFrescas">Verduras frescas</h2> 
         </p>
          <a href="" title="Verduras frescas"><img src="../proyecto-Ecommerce/images/verdurasTodas.jpg" alt="Frutas frescas" id="ingresoVerduras"/></a>
-        <div class="descripcionPpal"><p > Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aliquam, qui consectetur ex amet dolorem.</p></div>
+        <div id="descripcion"><p > Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aliquam, qui consectetur ex amet dolorem.</p></div>
       </div>
       
 
       
-      <aside class="hidden-sm "><!--caja7-->
-        <div class="gridAside " >
-          
-          <div class="cuadroOfertas">
-            <div class="artOfertado">
-              <h3>
-                Berenjenas
-               </h3>
-              <img src="../proyecto-Ecommerce/images/berenjenas.jpg" alt="Berenjenas" class="aOfertado"/>
-              <p id="descripcion">Lorem ipsum dolor sit amet., explicabo!</p>
-            </div>
-            
-            <div class="artOfertado">
-              
-              <h3>
-                 Cebollas
-               </h3>
-               <img src="../proyecto-Ecommerce/images/cebollas.jpg" alt="Cebollas" class="aOfertado"/>
-               <p id="descripcion">Lorem ipsum dolor sit amet., explicabo!</p>
-              
-             </div>
- 
-            <div class="artOfertado">
-               <h3>
-                 Lechugas
-              </h3>
-              <img src="../proyecto-Ecommerce/images/lechugas.webp" alt="Lechugas" class="aOfertado"/>
-              <p id="descripcion"> Lorem ipsum dolor sit amet., explicabo!</p>
-            </div>
-            <div class="artOfertado">
-              
-              <h3>
-                 Cebollas
-               </h3>
-               <img src="../proyecto-Ecommerce/images/cebollas.jpg" alt="Cebollas" class="aOfertado"/>
-               <p id="descripcion"> Lorem ipsum dolor sit amet., explicabo!</p>
-              
-             </div>
-             <div class="artOfertado">
-              <h3>
-                Berenjenas
-               </h3>
-              <img src="../proyecto-Ecommerce/images/berenjenas.jpg" alt="Berenjenas" class="aOfertado"/>
-              <p id="descripcion">Lorem ipsum dolor sit amet., explicabo!</p>
-            </div>
-           
-          </div>
+      <aside class="gridAside" ><!--caja7-->
+        <div class="nameOfertas">
+          <p>
+            OFERTAS
+          </p>
 
+         </div>
+         <div class="artOfertado">
+          <h3>
+            Berenjenas
+           </h3>
+          <img src="../proyecto-Ecommerce/images/berenjenas.jpg" alt="Berenjenas" class="aOfertado"/>
+          <p id="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, impedit?</p>
+         </div>
+      
+         <div class="artOfertado">
+        
+          <h3>
+             Cebollas
+           </h3>
+           <img src="../proyecto-Ecommerce/images/cebollas.jpg" alt="Cebollas" class="aOfertado"/>
+           <p id="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, optio.</p>
+        
+         </div>
+
+         <div class="artOfertado">
+           <h3>
+             Lechugas
+          </h3>
+          <img src="../proyecto-Ecommerce/images/lechugas.webp" alt="Lechugas" class="aOfertado"/>
+          <p id="descripcion"> Lorem ipsum dolor sit amet consectetur adipisicing elit. At, similique!!</p>
+         </div>
+
+         <div class="artOfertado">
+        
+            <h3>
+                Cebollas
+             </h3>
+             <img src="../proyecto-Ecommerce/images/cebollas.jpg" alt="Cebollas" class="aOfertado"/>
+             <p id="descripcion"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quaerat.</p>
+        
+          </div>
+          
+         
 
 
 
           
   
         
-        </div>
+        
 
 
 
@@ -132,7 +140,7 @@
              <a href="" title="Miel"><img src="../proyecto-Ecommerce/images/miel.jpg" alt="Miel" id="ingresoMiel"/></a>
            <a href="" title="Conservas"><img src="../proyecto-Ecommerce/images/conservas.jpg" alt="Conservas" id="ingresoConservas"/></a>
 
-           <div class="descripcionPpal"><p > Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta consequatur placeat minus repellat deserunt magnam.</p></div>
+           <div id="descripcion"><p > Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta consequatur placeat minus repellat deserunt magnam.</p></div>
           </div>
           <div class="gridIngresoHarinasFrutosSecos">
             <p>
@@ -141,7 +149,7 @@
              <a href="" title="Harinas"><img src="../proyecto-Ecommerce/images/harinas.jpg" alt="Harinas" id="ingresoHarinas" /></a> 
              <a href="" title="Frutos Secos"><img src="../proyecto-Ecommerce/images/frutosSecos.jpg" alt="Frutos Secos" id="ingresoFrutosSecos" /></a>
 
-          <div class="descripcionPpal"><p > Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta consequatur placeat minus repellat deserunt magnam.</p></div>
+          <div id="descripcion"><p > Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta consequatur placeat minus repellat deserunt magnam.</p></div>
           </div>
        <div class="banner">
         <img src="../proyecto-Ecommerce/images/banner.jpg" alt="Banner" id="bannerFarm">
@@ -153,8 +161,8 @@
 
 
         <div class="contactosFooter">
-          <p id="contacto">
-            <h2>
+          <p >
+            <h2 id="contacto">
              CONTACTANOS
             </h2>
           </p>
@@ -162,12 +170,12 @@
             <ul id="contacto">
                 <li>
                   
-                 <a href="mailto:nowhere@mozilla.org"><img src="../proyecto-Ecommerce/images/emailIcon.png" alt="Icono de email"></a>
+                 <a href="mailto:nowhere@mozilla.org"><img src="../proyecto-Ecommerce/images/emailIcon.png" alt="Icono de email" id="icon"></a>
                 </li>
                 <li>
-                  <a href="https://es-la.facebook.com/"><img src="../proyecto-Ecommerce/images/facebookIcon.png" alt="Icono de Facebook"></a>
+                  <a href="https://es-la.facebook.com/"><img src="../proyecto-Ecommerce/images/facebookIcon.png" alt="Icono de Facebook" id="icon"></a>
                 </li>
-                <li><a href="https://www.instagram.com/"><img src="../proyecto-Ecommerce/images/instagramIcon.png" alt="Icono de Facebook"></a>
+                <li><a href="https://www.instagram.com/"><img src="../proyecto-Ecommerce/images/instagramIcon.png" alt="Icono de Instagram" id="icon"></a>
                 </li>
   
   
@@ -175,7 +183,7 @@
         
            </p>
            <p>
-            <a target="_blank" href="https://icons8.com" id="icons"> Icons by Icons8</a>
+            <a target="_blank" href="https://icons8.com" id="iconRef"> Icons by Icons8</a>
            </p>
       </div>
       <div class="infoImportanteFooter">

@@ -1,0 +1,917 @@
+
+/*GENERAL*/
+
+
+body{
+
+    background-color: white;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+
+
+}
+
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: #fff;
+}
+ul{
+    list-style: none;
+}
+
+.container{
+    display: grid;
+    width: 100%;
+    background-color: rgb(94, 172, 91); ;
+    border: 2px solid black;
+  
+}
+
+
+.gridSearchBar{
+   
+    width: 100%;
+    padding-bottom: 10px;
+
+}
+#elementosBusqueda{/*contenedor de searchbar*/
+    font-size:1em ;
+    color: rgb(235, 238, 236);
+    text-align: center;
+    margin: 0;
+    padding-top: 1.5em;
+
+  }
+
+
+
+#botonBusqueda{/*boton que se cliquea para buscar*/
+
+    font-size: large;
+    width:100px ;
+    height: 35px;
+    border-radius: 5px;
+    box-shadow: 10px;
+
+}
+#cajaTextoBusqueda{/*caja donde se ingresa el texto para buscar*/
+
+    height: 35px;
+    border-radius: 20px;
+    box-shadow: 20px;
+}
+
+.dropdownMenu{ /*grid de dopdownMenu*/
+
+    grid-row: 100%;
+    grid-column: 1/3;
+    float: center;
+    padding-left: 30%;
+    
+    
+}
+.drop-button{ /*Botón de menu desplegable*/
+    background-color: rgb(94, 172, 91);
+    color: #fff;
+    border: 2px solid white;
+    padding: 5px 50px 5px 50px;
+    border-radius: 20px;
+    font-size: 15px;
+   margin: 5px;
+    
+  }
+  
+  
+  
+  /*Posición del contenedor*/
+  .dropdown{
+    position: relative;
+    display: inline-block;
+   }
+  
+  /*submenu*/
+  .dropdown-content{
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0.5,0.5,0.5,0.8);
+    z-index: 1;
+    background-color:rgb(94, 172, 91) ;
+  }
+  
+  .dropdown-content a{
+    color: #fff;
+    padding: 12px 16px;
+    display: block;
+  }
+  
+  
+  .show {
+    display: block;
+  }
+ 
+
+    .gridMInferior{/*grid del menu de navegacion*/
+        display: grid;
+        color: aliceblue;
+        border: 2px solid rgb(94, 172, 91);
+        background-color:rgb(23, 112, 23);
+        text-align: center;
+        
+    
+    }
+    #gridMInferiorSec{/*div que contiene cada elemento el menu de navegacion */
+        text-align: center;
+        padding: 20px 30px 35px 40px;
+        border: 2px solid rgb(23, 112, 23);
+        background-color: rgb(94, 172, 91) ;
+        border-radius: 10px;
+        box-shadow: 5px;
+        font-size: 1em;
+    
+    }
+    #gridMInferiorIcon{/* div que contiene al icono carrito*/
+
+    border: 2px solid rgb(23, 112, 23);
+    background-color: rgb(94, 172, 91) ;
+    border-radius: 10px;
+    box-shadow: 5px;
+    
+    
+    }
+  
+    
+   
+    
+    a #mInferiorName {/* corrigiendo vista de link*/
+        color:white;
+        text-decoration: none;
+    
+    }
+    #mInferiorName{/* palabra contenida en etiqueta strong*/
+    
+        padding: 0 ;
+        font-size: small;
+    
+    
+    }
+
+    
+    
+    /*caja5*/
+    #ingresoFrutas{
+    
+        width: 98%;
+        height: 78%;
+       padding: 0 5px 5px 0;
+       
+     
+    
+    }
+    
+    #frutasFrescas{
+        color: aliceblue;
+    }
+    
+    
+    .gridIngresoFrutas{
+    
+        text-align: center;
+        align-items: center;
+        border: 2px solid rgb(18, 146, 76);
+        background-color: rgb(94, 172, 91) ;
+        color: aliceblue;
+    }
+
+    #ingresoVerduras{
+    
+        width: 98%;
+        height: 78%;
+     
+     
+    
+    }
+    
+    #verdurasFrescas{
+        color: aliceblue;
+    }
+    
+    .gridIngresoVerduras{
+    
+        text-align: center;
+        align-items: center;
+        border: 2px solid rgb(18, 146, 76);
+        background-color: rgb(94, 172, 91);
+        color: aliceblue;
+    }
+    
+    /*caja8*/
+    #ingresoMiel{
+    
+        width: 50%;
+        height: 78%;
+       float: left;
+       background-color: rgb(94, 172, 91) ;
+       
+     
+    
+    }
+    #ingresoConservas{
+    
+        width: 50%;
+        height: 78%;
+       float: right;
+       
+       
+     
+    
+    }
+    
+    
+    #mielConservas{
+        color: aliceblue;
+        background-color: rgb(94, 172, 91) ;
+    }
+    
+    .gridIngresoMielConservas{
+    
+        text-align: center;
+        align-items: center;
+        border: 2px solid rgb(18, 146, 76);
+        background-color: rgb(94, 172, 91);
+        color: aliceblue;
+    
+       
+    
+    }
+    
+    /*caja9*/
+    #ingresoHarinas{
+    
+        width: 50%;
+        height: 78%;
+       float: left;
+       
+    }
+    #ingresoFrutosSecos{
+    
+        width: 50%;
+        height: 78%;
+       float: right;
+    }
+    
+    
+    #harinasFrutosSecos{
+        color: aliceblue;
+    }
+    
+    .gridIngresoHarinasFrutosSecos{
+    
+        text-align: center;
+        align-items: center;
+        border: 2px solid rgb(18, 146, 76);
+        background-color: rgb(94, 172, 91) ;
+        color: aliceblue;
+       
+    
+    }
+
+    .gridFooter{/*caja10-- grid del  footer*/
+       
+       
+         display: grid;
+         border: 2px solid rgb(18, 146, 76);
+         background-color:rgb(94, 172, 91);
+         color: black;
+        font-size: small;
+        
+        
+        
+    
+    
+    
+    }
+    #contacto li{/*correccion de display de iconos inferiores*/
+        display: inline;
+       padding: 1.5em;
+    }
+    
+    .contactosFooter{/*div del footer*/
+    
+    
+    color: black;
+    font-size: small;
+    text-align: center;
+    
+    }
+    
+    #icons{/*iconeos inferiores correccion de color*/
+        color: black;
+    }
+    
+    a #mercadoCentral{/*correccion del link de mercado central*/
+       color: white;
+        text-decoration:none;
+       
+    }
+    .infoImportanteFooter{ /* divisione del footer*/
+        text-align: center;
+        padding-top: 2em;
+    
+    }
+       
+    @media (max-width: 575.98px)and (orientation:portrait) {
+
+        .container{
+            
+            grid-template-columns: 50% 50%; 
+            grid-template-rows: 1fr; 
+
+        }
+    
+        .gridLogo{/*contiene la grid del logo*/
+            display: none;
+        }
+        .gridSearchBar{
+            grid-column: 1/3;
+            grid-row: 1/2;
+            
+        }
+        #botonBusqueda{/*boton que se cliquea para buscar*/
+    
+           
+            border-radius: 5px;
+            box-shadow: 10px;
+        
+        }
+        #cajaTextoBusqueda{/*caja donde se ingresa el texto para buscar*/
+        
+            width: 250px;
+            border-radius: 20px;
+            box-shadow: 20px;
+        }
+    
+        .gridMInferior{
+    
+            display: none;
+        }
+        .gridIngresoFrutas{/*contenedor del ingreso frutas*/
+    
+            padding: 2% 0 2% 1%;
+            grid-column: 1/3;
+            grid-row: 100%;
+    
+        }
+        #descripcion{
+            display: none;
+        }
+        .gridIngresoVerduras{
+        
+            padding: 2% 0 2% 1%;
+            grid-column: 1/3;
+            grid-row: 100%;
+        }
+    
+        .gridIngresoMielConservas{
+        
+            padding: 0 2% 10% 2%;
+            grid-column: 1/3;
+            grid-row: 100%;
+           
+        
+        }
+        #ingresoHarinas{
+    
+           padding:0 0 2px 0;
+          
+        }
+        #ingresoFrutosSecos{
+        
+            padding:0 0 2px 0;
+           margin: 2 px;
+           
+        }
+        
+    .gridIngresoHarinasFrutosSecos{
+    
+    
+        padding: 0 2% 10% 2%;
+        grid-column: 1/3;
+        grid-row: 100%;
+       
+    
+    }
+
+    .gridAside{
+        display: none;
+
+      }
+    
+    .banner{
+        display: none;
+    }
+    .gridFooter{
+        grid-column: 1/3;
+        grid-row: 100%;
+     
+    }
+    #contacto li{/*correccion de display de iconos inferiores*/
+        display: inline;
+       padding: 2em;
+     
+    }
+    #icon{
+        height: 1.5em;
+       width: 1.5em;
+    }
+    #iconRef{
+        color: black;
+    }
+
+    }
+
+    @media (min-width: 375px) and (max-width: 990.98px) and (orientation:landscape) {
+        .container{
+            
+            grid-template-columns: 50% 50%; 
+            grid-template-rows: 1fr; 
+
+        }
+    
+        .gridLogo{/*contiene la grid del logo*/
+            display: none;
+        }
+        .gridSearchBar{
+            grid-column: 1/3;
+            grid-row: 1/2;
+            
+        }
+        #botonBusqueda{/*boton que se cliquea para buscar*/
+    
+           
+            border-radius: 5px;
+            box-shadow: 10px;
+        
+        }
+        #cajaTextoBusqueda{/*caja donde se ingresa el texto para buscar*/
+    
+            width: 350px;
+            height: 35px;
+            border-radius: 20px;
+            box-shadow: 20px;
+        }
+    
+        .dropdownMenu{
+    
+            display: none;
+        }
+        .gridMInferior{/*grid del menu de navegacion*/
+          
+            grid-template-columns: 17% 17% 15% 16% 17% 13% 5%; 
+            grid-template-rows: 100%; 
+            grid-column: 1/4; 
+            padding: 1% 1% 1% 1%;
+            text-align: center;
+            
+        
+        }
+        #gridMInferiorSec{/*div que contiene cada elemento el menu de navegacion */
+           
+            padding: 15px 15px 15px 20px;
+            font-size: 1em;
+        
+        }
+        #gridMInferiorIcon{/* div que contiene al icono carrito*/
+        height: 3.3em;
+        width: 2em;
+        padding: 5px 5px 10px 3px;
+        
+        }
+       
+    
+        #mInferiorIcon{/*ID de imagen de carrito*/
+        height: 1.5em;
+        width: 1.5em;
+        padding-top: 10px;
+        
+        
+        }
+        
+       
+        
+        .gridIngresoFrutas{/*contenedor del ingreso frutas*/
+    
+            padding: 2% 0 2% 1%;
+            grid-column: 1/3;
+            grid-row: 100%;
+    
+        }
+        #descripcion{
+            display: none;
+        }
+        .gridIngresoVerduras{
+        
+            padding: 2% 0 2% 1%;
+            grid-column: 1/3;
+            grid-row: 100%;
+        }
+    
+        .gridIngresoMielConservas{
+        
+            padding: 0 2% 10% 2%;
+            grid-column: 1/3;
+            grid-row: 100%;
+           
+        
+        }
+        #ingresoHarinas{
+    
+           padding:0 0 2px 0;
+          
+        }
+        #ingresoFrutosSecos{
+        
+            padding:0 0 2px 0;
+           margin: 2 px;
+           
+        }
+        
+    .gridIngresoHarinasFrutosSecos{
+    
+    
+        padding: 0 2% 10% 2%;
+        grid-column: 1/3;
+        grid-row: 100%;
+       
+    
+    }
+
+    .gridAside{
+        display: none;
+
+      }
+    
+    .banner{
+        display: none;
+    }
+    .gridFooter{
+        grid-column: 1/3;
+        grid-row: 100%;
+     
+    }
+    #contacto li{/*correccion de display de iconos inferiores*/
+        display: inline;
+       padding: 2em;
+     
+    }
+    #icon{
+        height: 1.5em;
+       width: 1.5em;
+    }
+    #iconRef{
+        color: black;
+    }
+
+
+    }
+
+    @media (min-width: 575.98px) and (max-width: 990.98px) and (orientation:portrait) {/*575.98px---794.98*/
+        
+         
+         .container{
+            
+             grid-template-columns: 30% 70%; 
+             grid-template-rows: 1fr; 
+           
+         }
+     
+         .gridLogo{/*contiene la grid del logo*/
+            width: 100%;
+            height: 100%;
+            grid-column: 1/1;
+             grid-row: 1/2;
+         }
+         .logo{
+     
+             height: 100%;
+             width: 100%;
+
+     
+         }
+         .gridSearchBar{
+             grid-column: 2/2;
+             grid-row: 1/2;
+             padding-bottom: 10px;
+     
+         }
+         #elementosBusqueda{/*contenedor de searchbar*/
+             margin: 0;
+             padding-top: 1.5em;
+         
+           }
+       
+         #cajaTextoBusqueda{/*caja donde se ingresa el texto para buscar*/
+         
+             width: 350px;
+             height: 35px;
+             border-radius: 20px;
+             box-shadow: 20px;
+         }
+     
+     
+         .dropdownMenu{
+             display:none
+         }
+         
+         /*caja3 */
+         
+         .gridMInferior{/*grid del menu de navegacion*/
+       
+         
+        grid-template-columns: 17% 17% 17% 16% 17% 11% 5%; 
+        grid-template-rows: 100%; 
+        grid-column: 1/4; 
+        padding: 1% 0.5% 1% 0;
+      
+         }
+
+
+         #gridMInferiorSec{/*div que contiene cada elemento el menu de navegacion */
+     
+             padding: 15px 15px 15px 20px;
+         
+         }
+         #gridMInferiorIcon{/* div que contiene al icono carrito*/
+         height: 3.3em;
+         width: 2em;
+         padding: 5px 5px 10px 3px;
+         
+         }
+        
+     
+         #mInferiorIcon{/*ID de imagen de carrito*/
+         height: 1.5em;
+         width: 1.5em;
+         padding-top: 10px;
+         
+         }
+         
+         
+         .gridIngresoFrutas{/*contenedor del ingreso frutas*/
+         
+             padding: 2% 0 2% 1%;
+             grid-column: 1/3;
+             grid-row: 100%;
+     
+         }
+         #descripcion{
+             display: none;
+
+         }
+         
+         .gridIngresoVerduras{
+         
+
+             padding: 2% 0 2% 1%;
+             grid-column: 1/3;
+             grid-row: 100%;
+         }
+    
+         /*caja8*/
+         #ingresoMiel{/*foto deingreso a miel y conservas*/
+
+            padding:0 0 5px 0;
+         }
+
+         #ingresoConservas{
+
+            padding:0 0 2px 0;
+         }
+         
+         .gridIngresoMielConservas{
+
+             padding: 0 2% 10% 2%;
+             grid-column: 1/3;
+             grid-row: 100%;
+         }
+         
+         /*caja9*/
+         #ingresoHarinas{
+
+            padding:0 0 2px 0;
+            
+         }
+         #ingresoFrutosSecos{
+
+             padding:0 0 2px 0;
+            margin: 2 px;
+         }
+
+         .gridIngresoHarinasFrutosSecos{
+         
+
+             padding: 0 2% 10% 2%;
+             grid-column: 1/3;
+             grid-row: 100%;
+         }
+     
+         .gridAside{
+             display: none;
+     
+           }
+         
+         .banner{
+             display: none;
+         }
+     
+         .gridFooter{
+             grid-column: 1/3;
+             grid-row: 100%;
+         }
+         #contacto li{/*correccion de display de iconos inferiores*/
+            padding: 2em;
+          
+         }
+         #icon{
+             height: 1.5em;
+            width: 1.5em;
+         }
+         #iconRef{
+             color: black;
+         }
+     
+     }
+     @media (min-width: 991px) and (max-width: 1199px)and (orientation:landscape) {
+        .container{
+            
+            grid-template-columns: 30% 70%; 
+            grid-template-rows: 1fr; 
+          
+        }
+    
+        .gridLogo{/*contiene la grid del logo*/
+           width: 100%;
+           height: 100%;
+           grid-column: 1/1;
+            grid-row: 1/2;
+        }
+        .logo{
+    
+            height: 100%;
+            width: 100%;
+
+    
+        }
+        .gridSearchBar{
+            grid-column: 2/2;
+            grid-row: 1/2;
+            padding-bottom: 10px;
+    
+        }
+        #elementosBusqueda{/*contenedor de searchbar*/
+            margin: 0;
+            padding-top: 1.5em;
+        
+          }
+      
+        #cajaTextoBusqueda{/*caja donde se ingresa el texto para buscar*/
+        
+            width: 350px;
+            height: 35px;
+            border-radius: 20px;
+            box-shadow: 20px;
+        }
+    
+    
+        .dropdownMenu{
+            display:none
+        }
+        
+        /*caja3 */
+        
+        .gridMInferior{/*grid del menu de navegacion*/
+      
+           display: grid;
+           grid-template-columns: 17% 17% 17% 16% 17% 11% 5%; 
+           grid-template-rows: 100%; 
+           grid-column: 1/4; 
+           padding: 1% 0.5% 1% 0;
+       
+        }
+
+
+        #gridMInferiorSec{/*div que contiene cada elemento el menu de navegacion */
+    
+            padding: 15px 15px 15px 20px;
+        
+        }
+        #gridMInferiorIcon{/* div que contiene al icono carrito*/
+        height: 3.3em;
+        width: 2em;
+        padding: 5px 5px 10px 3px;
+        
+        }
+       
+    
+        #mInferiorIcon{/*ID de imagen de carrito*/
+        height: 1.5em;
+        width: 1.5em;
+        padding-top: 10px;
+        
+        }
+        
+        
+        .gridIngresoFrutas{/*contenedor del ingreso frutas*/
+        
+            padding: 2% 0 2% 1%;
+            grid-column: 1/3;
+            grid-row: 100%;
+    
+        }
+        #descripcion{
+            display: none;
+
+        }
+        
+        .gridIngresoVerduras{
+        
+
+            padding: 2% 0 2% 1%;
+            grid-column: 1/3;
+            grid-row: 100%;
+        }
+   
+        /*caja8*/
+        #ingresoMiel{/*foto deingreso a miel y conservas*/
+
+           padding:0 0 5px 0;
+        }
+
+        #ingresoConservas{
+
+           padding:0 0 2px 0;
+        }
+        
+        .gridIngresoMielConservas{
+
+            padding: 0 2% 10% 2%;
+            grid-column: 1/3;
+            grid-row: 100%;
+        }
+        
+        /*caja9*/
+        #ingresoHarinas{
+
+           padding:0 0 2px 0;
+           
+        }
+        #ingresoFrutosSecos{
+
+            padding:0 0 2px 0;
+           margin: 2 px;
+        }
+
+        .gridIngresoHarinasFrutosSecos{
+        
+
+            padding: 0 2% 10% 2%;
+            grid-column: 1/3;
+            grid-row: 100%;
+        }
+    
+        .gridAside{
+            display: none;
+    
+          }
+        
+        .banner{
+            display: none;
+        }
+    
+        .gridFooter{
+            grid-column: 1/3;
+            grid-row: 100%;
+        }
+        #contacto li{/*correccion de display de iconos inferiores*/
+           padding: 2em;
+         
+        }
+        #icon{
+            height: 1.5em;
+           width: 1.5em;
+        }
+        #iconRef{
+            color: black;
+        }
+
+
+
+
+
+
+     }
+     
+
+
